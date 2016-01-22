@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Slabo';
+    src: url(../resources/Georgia27px-Regular.ttf) format('truetype');
+}
+
+main {
+    display: flex;
+    height:100%;
+}
+h1, h2, h3, h4 {
+    font-family: Segoe UI;
+    font-weight:normal;
+}
+html {
+    background-color: #2b2b2b;
+    font-family: "Segoe UI";
+    height:100%;
+    min-height: 100%;
+}
+form {
+    border: 2px solid #00B229;
+    padding: 15px;
+    width:100%;
+    min-width: 100%;
+}
+body {
+    height: 100%;
+    min-height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-family: Georgia;
+}
+html,
+body {
+    font-family: Georgia;
+    color: white;
+    min-height: 100%;
+    height:100%;
+}
+body {
+    margin: auto;
+    background-color: #2b2b2b ;
+}
+table
+{
+    border: 1px solid white;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.tab-label{
+    text-align: right;
+    display: inline-block;
+    width: 30%;
+    min-width: 120px;
+    padding: 8px;
+}
+.input-text{
+    font-family:Georgia;
+    font-size: 1.2em;
+    max-height:40px;
+    width:100%;
+    max-width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    overflow-x: hidden;
+    padding: 10px;
+    margin: 0px 20px 0px 10px;
+    background-color: #2b2b2b;
+    color:white;
+    border: 2px solid white ;
+    display: block;
+}
+.input-text::first-letter{
+    font-weight:bold;
+    letter-spacing: 0.3em;
+    color: #00B229;
+}
+.input-text:first-letter{
+    font-weight:bold;
+    letter-spacing: 0.3em;
+    color: #00B229;
+}
+.input-text:focus, .input-text:hover{
+    background: #454545;
+    color: #ffffff;
+    border: 2px solid white ;
+}
+.textfield{
+    overflow: hidden;
+    background-color: #454545;
+    color:white;
+    display: block;
+    width:calc(100% - 10px);
+    max-width: calc(100% - 14px);
+    margin:10px 0px;
+}
+.textfield:focus, .textfield:hover{
+    background: #2b2b2b;
+    color: #ffffff;
+    border: 2px solid white ;
+}
+
+#bt-addgroup, #addusers, #addgroupname {
+    font-family:Georgia;
+    font-size: 1.2em;
+    max-height:80%;
+    vertical-align: middle;
+    padding: 5px;
+    border: 2px solid white ;
+}
+#register, #login
+{
+    padding: 5px;
+    width: 100%;
+}
+a {
+    color:white;
+}
+a:hover {
+    color:#00B229;
+}
+p {
+    font-family:Georgia;
+}
+button {
+    background-color: #00B229;
+    color: white;
+    width:100%;
+;
+}
+button:hover {
+    background-color: #FF0018;
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.2em;
+}
+
+header{
+    height: 90px;
+    display:flex;
+    align-items: center;
+    border-bottom: solid white;
+}
+header #logo {
+    height: 85%;
+    padding: 0px 10px 0px 20px;
+}
+header .input-text{
+    flex:5;
+}
+#groups{
+    border-left: 2px solid white;
+    flex:1;
+    background-color: #454545;
+    display: inline-flex;
+    flex-direction: column;
+}
+#fields{
+    flex:2;
+
+}
+section {
+    padding: 20px;
+}
+
+#description{
+    height:50%;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+}
+#showgroups
+{
+    flex:2;
+}
+#div-addgroups
+{
+    flex:1;
+}
+.ui-autocomplete { height: 80px; overflow-y: scroll; overflow-x: hidden;}

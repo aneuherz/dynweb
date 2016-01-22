@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do&Done</title>
+
+
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+    <link rel="stylesheet" title="main" href="css/main.css"
+          type="text/css"/>
+
+    <link rel="stylesheet" title="normalize" href="css/normalize.css"
+          type="text/css"/>
+    <link rel="stylesheet" title="reset" href="css/reset.css"
+          type="text/css"/>
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script src="javascript/main.js" type="text/javascript"></script>
+    <script src="javascript/main-jq.js" type="text/javascript"></script>
+</head>
+<body onload="load()">
+<header>
+    <img src="resources/doanddone.svg" id="logo"/>
+    <img id="description" src="resources/icons/icon-show.svg"/>
+    <div class="input-text" id='inputfield' contenteditable oninput="inputChanged()">sall</div>
+</header>
+<main>
+    <section id="fields">
+        <p id="test"></p>
+        <table>
+            <thead>
+            <tr>
+                <th>header</th>
+                <th>date</th>
+                <th>status</th>
+                <th>functions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="4" contenteditable="true">wuhu my name is anja this is fucking awesome anananafhadofhadfohadgoa
+                    adhfadfhadhfpahdpf</td>
+            </tr>
+            </tbody>
+            <thead>
+            <tr>
+                <th>header</th>
+                <th>date</th>
+                <th>status</th>
+                <th>functions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="4">wuhu my name is anja</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="groups">
+        <div id="div-addgroups">
+            <h2 id="usergreeting">Hi!</h2>
+            <h2>Add a new group?</h2>
+            <input id="addgroupname" type="text" class="textfield" value="...add groupname"/>
+            <input id="addusers"  class="textfield" value="...add users"/>
+            <button id="bt-addgroup">Add Group...</button>
+        </div>
+        <div id="showgroups">
+            <h3>Your groups:</h3>
+            <ul id="grouplist"></ul>
+            <br/>
+        </div>
+    </section>
+</main>
+</body>
+</html>

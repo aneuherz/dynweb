@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" title="login" href="css/login.css"
+                                 type="text/css"/>
+    <link rel="stylesheet" title="normalize" href="css/normalize.css"
+          type="text/css"/>
+    <link rel="stylesheet" title="reset" href="css/reset.css"
+          type="text/css"/>
+    <script src="javascript/login.js" type="text/javascript"></script>
+
+
+</head>
+<body onload="load()">
+<main>
+    <img src="resources/doanddone.svg" id="logo"/>
+    <p>Manage Your Daily Business. Easy & Fast.</p>
+    <form id="form-login" method="post" enctype="text/plain" action="index.js/loginNow"><!--//<!-->
+        <label class="tab-label" for="un-login">Username: </label><input class="form-input" id="un-login"
+                                                                         name="username" type="text"/><br/>
+        <label class="tab-label" for="pw-login">Password: </label><input class="form-input" id="pw-login"
+                                                                         name="password" type="password"/><br/>
+        <br/>
+        <button id="login" type="submit">Login</button>
+    </form>
+    <form id="form-register" method="get" action="register.xhtml" enctype="text/plain">
+        <label class="tab-label" for="un">Username: </label><input class="form-input" id="un" name="username"
+                                                                   type="text"/><br/>
+        <label class="tab-label" for="pw">Password: </label><input class="form-input" id="pw" type="password"/><br/>
+        <label class="tab-label" for="pw2">Re-Enter Password: </label><input class="form-input" id="pw2" name="password"
+                                                                             type="password"/><br/>
+        <label class="tab-label" for="em">E-Mail: </label><input class="form-input" id="em" name="email" type="text"/>
+        <br/>
+        <br/>
+        <input type="checkbox" id="acceptAGB" name="acceptAGB"/> <label for="acceptAGB"> I accept the Terms of
+        Use.</label>
+        <br/>
+        <br/>
+        <button id="register" type="submit">Register for free!</button>
+    </form>
+    <h3><a id="link-register" href="javascript:spoiler('form-register','form-login')">Register Now!</a></h3>
+</main>
+</body>
+</html>

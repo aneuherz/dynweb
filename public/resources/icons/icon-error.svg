@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="128px" height="128px" viewBox="0 0 128 128" xml:space="preserve">
+<g id="add_delete" display="none">
+	
+		<line id="plusminus" display="inline" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-miterlimit="10" x1="30" y1="64" x2="96" y2="64"/>
+	
+		<line id="x_1_" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="93.905" y1="95.405" x2="33.095" y2="34.594"/>
+	
+		<line id="x" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="93.905" y1="33.595" x2="33.095" y2="94.405"/>
+	
+		<line id="plusminus_4_" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-miterlimit="10" x1="64" y1="97" x2="64" y2="31"/>
+</g>
+<g id="new" display="none">
+	
+		<line id="plusminus_1_" display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="21" y1="92.5" x2="107" y2="92.5"/>
+	
+		<line id="plusminus_2_" display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="21" y1="34.5" x2="107" y2="34.5"/>
+	
+		<line id="plusminus_3_" display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="21" y1="64.5" x2="107" y2="64.5"/>
+</g>
+<g id="edit" display="none">
+	
+		<polygon id="plus_1_" display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		47.933,104.849 86.817,50.902 97.927,35.488 80.892,23.209 69.878,38.488 30.896,92.569 34.591,105.401 	"/>
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" x1="82.355" y1="47.686" x2="73.432" y2="41.254"/>
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" x1="42.594" y1="103.85" x2="33.67" y2="97.417"/>
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" x1="46.102" y1="98.981" x2="37.179" y2="92.55"/>
+</g>
+<g id="eraser" display="none">
+	
+		<polygon id="plusminus_6_" display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		81.596,23.951 51.543,54.003 34.102,71.445 20.784,84.762 38.933,102.911 51.543,103.5 106.344,48.7 	"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" d="
+		M31.98,61.31"/>
+	
+		<polygon display="inline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		51.897,55.063 75.585,78.752 106.344,48.7 82.303,24.658 	"/>
+</g>
+<g id="Ebene_3">
+	<path display="none" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" d="M122.5,118.561
+		c0,2.176-1.764,3.939-3.939,3.939H9.439c-2.175,0-3.939-1.764-3.939-3.939V9.439C5.5,7.264,7.264,5.5,9.439,5.5h109.122
+		c2.176,0,3.939,1.764,3.939,3.939V118.561z"/>
+	<ellipse display="none" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="33.5" cy="45.75" rx="0" ry="0.25"/>
+	<circle fill="none" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" cx="64.125" cy="64.125" r="60.125"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" d="M22.055,107.045
+		c28.065-28.299,56.13-56.598,84.196-84.896"/>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+</g>
+</svg>
