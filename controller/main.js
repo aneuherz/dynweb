@@ -10,6 +10,7 @@
 var fs = require("fs");
 var qs = require('querystring');
 var db = require("../model/db");
+var crypto = require("crypto");
 var user = '';
 
 function parsepost(request, response, action) {
@@ -26,23 +27,22 @@ function parsepost(request, response, action) {
         });
 
         request.on('end', function () {
-            body = body.trim().replace(/\r\n/g,"&");
+            body = body.trim().replace(/\r\n/g, "&");
             var post = qs.parse(body);
             action(response, post);
         });
     }
 }
 function redirectUrl(response, post) {
-        console.log(post);
-        console.log(post['username']);
-        user = post['username'];
-        console.log(post['password']);
-        response.statusCode = 302;
-        response.setHeader("Location", "/main.html");
-        response.end();
+    console.log(post);
+    console.log(post['username']);
+    user = post['username'];
+    console.log(post['password']);
+    response.statusCode = 302;
+    response.setHeader("Location", "/main.html");
+    response.end();
 }
-function addGroup(response, post)
-{
+function addGroup(response, post) {
     db.addGroup(response, post);
 }
 function Cookie(name, v) {
@@ -83,6 +83,22 @@ function extractCookiesDict(req) {
     return cookiesDict;
 }
 
+function register(response, post) {
+    console.log("REGISTER: Creating Hash " + JSON.stringify(post));
+    var pw = post["password"];
+    var un = post["username"];
+    var repPw = post["passwordrep"];
+
+    // TODO: alert won't be called on client
+    if (pw.localeCompare(repPw) != 0) {
+        response.end("alert('passwords do not match');");
+        return;
+    }
+    var sub = crypto.createHash("md5").update(un + "dad").digest("hex").substring(4, 10);
+    var hash = crypto.createHash("md5").update(pw).digest('hex');
+    console.log(hash);
+    db.addUser(un, hash, post["email"], sub);
+}
 var startup = function () {
     var http = require("http");
     var server = http.createServer(
@@ -112,21 +128,24 @@ var startup = function () {
                 parsepost(req, res, addGroup);
                 return;
             }
-            else if (req.url.lastIndexOf('select') > -1){
+            else if (req.url.lastIndexOf('select') > -1) {
                 db.find(res, 'tuser');
                 return;
             }
-            else if (req.url.lastIndexOf('users') > -1){
+            else if (req.url.lastIndexOf('register') > -1) {
+                parsepost(req, res, register);
+                return;
+            }
+            else if (req.url.lastIndexOf('users') > -1) {
                 var url = req.url.split('/');
-                var username = url[url.length-2];
+                var username = url[url.length - 2];
                 console.log(req.url);
                 db.findAllAvailableUsers(res, username);
                 return;
             }
-            else if (req.url.lastIndexOf('groups')>-1)
-            {
+            else if (req.url.lastIndexOf('groups') > -1) {
                 var url = req.url.split('/');
-                var username = url[url.length-2];
+                var username = url[url.length - 2];
                 db.findAllGroups(res, username);
                 return;
             }
@@ -142,13 +161,11 @@ var startup = function () {
                 mimeType = "text/html";
                 filename = req.url; // "/img/logo.png"
             }
-            else if(req.url.lastIndexOf(".ttf")>-1)
-            {
+            else if (req.url.lastIndexOf(".ttf") > -1) {
                 mimeType = "application/octet-stream";
                 filename = req.url;
             }
-            else
-            {
+            else {
                 console.log(req.url + ' NOT FOUND');
             }
 
@@ -159,9 +176,9 @@ var startup = function () {
             var cookies = extractCookiesDict(req);
             var currentUserCookie = cookies['username']
 
-            if (user!='' && currentUserCookie==null) {
-                    var cook = new Cookie("username", user);
-                    res.writeHead(200, {"Content-Type": mimeType, "Set-Cookie": [cook]});
+            if (user != '' && currentUserCookie == null) {
+                var cook = new Cookie("username", user);
+                res.writeHead(200, {"Content-Type": mimeType, "Set-Cookie": [cook]});
             }
             else {
                 res.writeHead(200, {"Content-Type": mimeType});

@@ -35,6 +35,12 @@ function findAllGroups(response,user) {
             response.end(JSON.stringify(rows));});
     return;
 }
+function addUser(username, hashedPw, email, subscriptionid) {
+    console.log("Inserting into DB");
+    var query = "INSERT INTO tuser (username, password, email, subscriptionid, createdOn, modifiedOn) " +
+        "VALUES (?, ?, ?, ?, date('now'), null)";
+db.run(query, username, hashedPw, email, subscriptionid);
+}
 function addGroup(response, post)
 {
 
@@ -73,3 +79,5 @@ module.exports.find = find;
 module.exports.findAllGroups = findAllGroups;
 module.exports.findAllAvailableUsers = findAllAvailableUsers;
 module.exports.addGroup = addGroup;
+module.exports.addUser = addUser;
+;

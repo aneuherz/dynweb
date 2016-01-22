@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" title="login" href="css/login.css"
-                                 type="text/css"/>
+          type="text/css"/>
     <link rel="stylesheet" title="normalize" href="css/normalize.css"
           type="text/css"/>
     <link rel="stylesheet" title="reset" href="css/reset.css"
@@ -25,13 +25,17 @@
         <br/>
         <button id="login" type="submit">Login</button>
     </form>
-    <form id="form-register" method="get" action="register.xhtml" enctype="text/plain">
+    <form id="form-register" method="post" action="index.js/register" enctype="text/plain">
         <label class="tab-label" for="un">Username: </label><input class="form-input" id="un" name="username"
                                                                    type="text"/><br/>
-        <label class="tab-label" for="pw">Password: </label><input class="form-input" id="pw" type="password"/><br/>
-        <label class="tab-label" for="pw2">Re-Enter Password: </label><input class="form-input" id="pw2" name="password"
-                                                                             type="password"/><br/>
-        <label class="tab-label" for="em">E-Mail: </label><input class="form-input" id="em" name="email" type="text"/>
+        <label class="tab-label" for="pw">Password: </label>
+        <input class="form-input" id="pw" name="password" type="password"/><br/>
+
+        <label class="tab-label" for="pw2">Re-Enter Password: </label>
+        <input class="form-input" id="pw2" name="passwordrep" type="password"/><br/>
+
+        <label class="tab-label" for="em">E-Mail: </label>
+        <input class="form-input" id="em" name="email" type="text"/>
         <br/>
         <br/>
         <input type="checkbox" id="acceptAGB" name="acceptAGB"/> <label for="acceptAGB"> I accept the Terms of
